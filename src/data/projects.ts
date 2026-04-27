@@ -164,7 +164,7 @@ export const projects: Project[] = [
     slug: 'plane animation',
     title: 'Plane Animation',
     category: '3D Animation',
-    cover: '/plane animation/preview.jpg',
+    cover: '/plane animation/preview.png',
     fallbackCover: '/plane animation/1.jpg',
     challenge: 'To create a smooth, stylized 3D animation demonstrating mechanical motion and environmental interaction.',
     solution: 'Modeled and rigged a low-poly airplane, focusing on fluid camera movements and vibrant, stylized lighting to create a playful yet professional motion piece.',
