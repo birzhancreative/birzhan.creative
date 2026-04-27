@@ -169,5 +169,15 @@ export const projects: Project[] = [
     challenge: 'To create a smooth, stylized 3D animation demonstrating mechanical motion and environmental interaction.',
     solution: 'Modeled and rigged a low-poly airplane, focusing on fluid camera movements and vibrant, stylized lighting to create a playful yet professional motion piece.',
     tools: 'Cinema 4D, Adobe Premiere Pro',
+  },
+  {
+    slug: 'brochure',
+    title: 'Brochure Design',
+    category: 'Print Design',
+    cover: '/brochure/preview.jpg',
+    fallbackCover: '/brochure/70x100.jpg',
+    challenge: 'To design an engaging and highly readable corporate brochure, balancing complex text information with compelling visual elements.',
+    solution: 'Developed a clean, grid-based layout using strong typographic hierarchy and custom imagery. The design ensures that key information is easily digestible while maintaining a premium, professional aesthetic.',
+    tools: 'Adobe InDesign, Adobe Illustrator, Adobe Photoshop',
   }
 ];
