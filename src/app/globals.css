@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-montserrat);
+}
+
+/* Hide default cursor globally */
+body {
+  cursor: none;
+  background-color: #FFFFFF;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #000000; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555; 
+}
+
+a, button {
+  cursor: none;
+}
+
+/* Koto specific layout utilities */
+.koto-dark-section {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.koto-text-gray {
+  color: #8A8A8A;
+}
+
+.koto-button-pill {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 9999px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.koto-button-pill:hover {
+  border-color: #fff;
+  background: rgba(255,255,255,0.1);
+}
