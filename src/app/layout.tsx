@@ -10,7 +10,7 @@ import Header from "@/components/Header";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Birzhan Shaimardan | Koto Replica",
+  title: "Birzhan Shaimardan",
   description: "Graphic Designer & Content Creator based in Warsaw.",
 };
 

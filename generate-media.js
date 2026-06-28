@@ -7,7 +7,7 @@ const mediaMap = {};
 const projects = [
   'domino', 'idesign', 'bs', 'watchmaker', 'pictogram', 'fence mockup',
   'air astana', 'campaign', 'arial', 'glorious model o', 'nomad',
-  'passport', 'book', 'water cycle', 'plane animation'
+  'passport', 'book', 'water cycle', 'plane animation', 'brochure', 'flamingo'
 ];
 
 for (const slug of projects) {
