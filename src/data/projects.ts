@@ -13,6 +13,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: 'flamingo',
+    title: 'Flamingo',
+    category: 'Brand Identity',
+    cover: '/flamingo/logo.jpg',
+    fallbackCover: '/flamingo/1.jpg',
+    description: 'A vibrant and modern brand identity design for Flamingo, focusing on elegant typography and a minimalist illustration style. Instagram: https://www.instagram.com/flam1ngo.kz/',
+    challenge: 'To create a distinctive, playful yet sophisticated visual identity for Flamingo. The challenge lay in balancing the tropical, organic associations of the flamingo with a clean, modern, and professional aesthetic suitable for a lifestyle brand.',
+    solution: 'I developed a cohesive design system centered around custom typography and a geometric emblem. By using a refined color palette of soft pinks, deep charcoal, and warm neutrals, we established a balanced look. The system was applied across packaging, business stationery, and digital touchpoints to create a consistent and memorable brand experience.',
+    tools: 'Figma',
+    year: '2026'
+  },
+  {
     slug: 'domino',
     title: 'Domino',
     category: 'Visual Identity',
@@ -179,17 +191,5 @@ export const projects: Project[] = [
     challenge: 'To design an engaging and highly readable corporate brochure, balancing complex text information with compelling visual elements.',
     solution: 'Developed a clean, grid-based layout using strong typographic hierarchy and custom imagery. The design ensures that key information is easily digestible while maintaining a premium, professional aesthetic.',
     tools: 'Adobe InDesign, Adobe Illustrator, Adobe Photoshop',
-  },
-  {
-    slug: 'flamingo',
-    title: 'Flamingo',
-    category: 'Brand Identity',
-    cover: '/flamingo/logo.jpg',
-    fallbackCover: '/flamingo/1.jpg',
-    description: 'A vibrant and modern brand identity design for Flamingo, focusing on elegant typography and a minimalist illustration style.',
-    challenge: 'To create a distinctive, playful yet sophisticated visual identity for Flamingo. The challenge lay in balancing the tropical, organic associations of the flamingo with a clean, modern, and professional aesthetic suitable for a lifestyle brand.',
-    solution: 'I developed a cohesive design system centered around custom typography and a geometric emblem. By using a refined color palette of soft pinks, deep charcoal, and warm neutrals, we established a balanced look. The system was applied across packaging, business stationery, and digital touchpoints to create a consistent and memorable brand experience.',
-    tools: 'Adobe Illustrator, Adobe Photoshop',
-    year: '2026'
   }
 ];

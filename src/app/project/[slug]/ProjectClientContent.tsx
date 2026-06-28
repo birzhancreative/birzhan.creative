@@ -50,6 +50,22 @@ export default function ProjectClientContent({ projectData, mediaFiles }: Projec
   // We don't separate hero media anymore, all media goes to the right column
   const contentMedia = mediaFiles;
 
+  const renderDescription = (text: string) => {
+    if (!text) return "A new era of design";
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    const parts = text.split(urlRegex);
+    return parts.map((part, i) => {
+      if (part.match(urlRegex)) {
+        return (
+          <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-white underline hover:opacity-80 transition-opacity break-all">
+            {part}
+          </a>
+        );
+      }
+      return part;
+    });
+  };
+
   return (
     <div className="bg-[#000] text-white">
       <div className="flex flex-col md:flex-row min-h-screen relative z-10 bg-black pt-24 md:pt-0">
@@ -63,7 +79,7 @@ export default function ProjectClientContent({ projectData, mediaFiles }: Projec
             className="md:mt-0 mt-8"
           >
             <h1 className="text-2xl md:text-3xl font-medium mb-2">{projectData.title}</h1>
-            <p className="text-sm md:text-base text-white/70 mb-4">{projectData.description || "A new era of design"}</p>
+            <p className="text-sm md:text-base text-white/70 mb-4">{renderDescription(projectData.description)}</p>
             <p className="text-[10px] text-white/40 uppercase tracking-widest">{projectData.category} - {projectData.year || "2024"}</p>
           </motion.div>
 
